@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Remove reddit Popup",
+  "version": "1.0",
+  "description": "Remove NSFW popup from Reddit pages.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["ext.js"]
+    }
+  ]
+  }
